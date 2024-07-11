@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Contact Form</title>
+		<script type="module" src="./popup.js"></script>
+	</head>
+	<body>
+		<h1>Contact Form</h1>
+		<form>
+			<label for="firstname">Firstname:</label>
+			<input
+				type="text"
+				id="firstname"
+				name="firstname"
+				required /><br /><br />
+
+			<label for="name">Name:</label>
+			<input type="text" id="name" name="name" required /><br /><br />
+
+			<label for="age">Age:</label>
+			<input type="number" id="age" name="age" required /><br /><br />
+
+			<label for="phone">Phone:</label>
+			<input type="tel" id="phone" name="phone" required /><br /><br />
+
+			<label for="email">Email:</label>
+			<input type="email" id="email" name="email" required /><br /><br />
+
+			<label for="student">Student at 42?:</label>
+			<input type="checkbox" id="student" name="student" /><br /><br />
+
+			<label>Gender:</label>
+			<input type="radio" id="male" name="gender" value="Male" required />
+
+			<label for="male">Male</label>
+			<input type="radio" id="female" name="gender" value="Female" />
+
+			<label for="female">Female</label>
+			<input type="radio" id="other" name="gender" value="Other" />
+			<label for="other">Other</label><br /><br />
+
+			<!-- ! Fix the onclick function -->
+			<button type="button" onclick="displayFormContents()">
+				Submit
+			</button>
+		</form>
+	</body>
+</html>
