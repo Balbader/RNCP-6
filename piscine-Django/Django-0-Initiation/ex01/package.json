@@ -2,14 +2,16 @@
 	"name": "ex01",
 	"version": "1.0.0",
 	"description": "",
-	"main": "index.js",
+	"main": "cv.html",
 	"scripts": {
+		"start": "web-dev-server --node-resolve --open --watch",
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"keywords": [],
 	"author": "",
 	"license": "ISC",
 	"devDependencies": {
+		"@web/dev-server": "^0.4.6",
 		"xo": "^0.58.0"
 	}
 }
